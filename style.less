@@ -156,7 +156,6 @@ main {
     max-width: 1150px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
   }
   
   .hero-content {
@@ -191,9 +190,10 @@ main {
   
   .testimonial-container {
     grid-column: span 2;
+    margin-top: 2rem;
     
     .testimonial-list {
-      margin-block-start: 2rem;
+      margin-block: 0;
       display: flex;
       align-items: center;
       gap: 20px;
@@ -201,13 +201,14 @@ main {
     
     .testimonial {
       max-width: 370px;
+      margin-block-end: 0;
       
       &:nth-child(2) {
-        margin-top: 3rem;
+        transform: translateY(2rem);
       }
       
       &:nth-child(3) {
-        margin-top: 6rem;
+        transform: translateY(4rem);
       }
     }
     
