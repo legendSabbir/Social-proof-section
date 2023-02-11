@@ -24,12 +24,11 @@ html {
 }
 
 body {
-  // min-height: 100vh;
   line-height: 1.5;
   font-size: 1.6rem;
   background-image: url("images/bg-pattern-top-mobile.svg"),
     url("images/bg-pattern-bottom-mobile.svg");
-  background-color: @light-grayish-magenta;
+  background-color: white;
   background-repeat: no-repeat, no-repeat;
   background-position: center top, center bottom;
 }
@@ -98,7 +97,7 @@ main {
 .testimonial {
   background-color: @very-dark-magenta;
   border-radius: 8px;
-  padding: 4rem 3rem;
+  padding: 4rem 4.5rem;
   margin-block-end: 1.6rem;
   
   .profile {
@@ -136,13 +135,18 @@ main {
   &-text {
     color: @white;
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-top: 2.5rem;
   }
 }
 
 @media only screen and (min-width: 1100px) {
   body {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: url("images/bg-pattern-top-desktop.svg"),
       url("images/bg-pattern-bottom-desktop.svg");
     background-position: left top, right bottom -100px;
@@ -159,14 +163,14 @@ main {
     text-align: left;
     
     h1 {
+      margin-top: 0;
       font-size: 5.2rem;
     }
   }
   
   .rating-list {
-    // max-width: ;
-    margin-top: 9rem;
-    // margin-left: auto;
+    margin-top: 0rem;
+    margin-left: 10rem;
     
     .rating {
       max-width: 400px;
@@ -189,14 +193,14 @@ main {
     grid-column: span 2;
     
     .testimonial-list {
+      margin-block-start: 2rem;
       display: flex;
       align-items: center;
       gap: 20px;
     }
     
     .testimonial {
-      max-width: 325px;
-      
+      max-width: 370px;
       
       &:nth-child(2) {
         margin-top: 3rem;
