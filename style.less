@@ -70,7 +70,7 @@ main {
   
   .rating {
     margin-top: 1.5rem;
-    background-color: hsl(303, 10%, 90%);
+    background-color: @light-grayish-magenta;
     border-radius: 8px;
     padding-block: 1.5rem;
     
@@ -80,6 +80,12 @@ main {
       gap: 5px;
       margin-block-end: .8rem;
       margin-inline: auto;
+      
+      .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     }
     
     .rating-text {
@@ -172,7 +178,7 @@ main {
     margin-left: 8rem;
     
     .rating {
-      width: 420px;
+      width: 450px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -184,7 +190,7 @@ main {
       &:nth-child(3) { margin-left: 6rem; }
       
       .star-container {
-        margin: 0;
+        margin: 0px;
         gap: 2px;
       }
     }
